@@ -3,12 +3,17 @@ user_btn = document.getElementById('user');
 
 const user_data = [];
 
-user_btn.addEventListener('click', () => {
-  getData();
-  user_data.push(getData);
-});
+// Steps:
+// 1. Create a localStorage database
+// 2. Create a function to accept user inputs
+// 3. Create a function to add data to the database
+// 4. Create a function to display data from the database into the app
 
-function getData() {
-  let name = prompt('What is your name?');
-  let age = prompt('What is your age?');
-}
+// Create a localstorage Database
+
+const db = localStorage.setItem('user_data', JSON.stringify(users));
+const users = [];
+
+users.push('Erasmus');
+
+console.log(users);
