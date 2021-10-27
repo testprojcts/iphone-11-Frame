@@ -3,7 +3,7 @@ user_btn = document.getElementById('user');
 
 const user_data = [];
 
-user_btn.addEventListner('click', () => {
+user_btn.addEventListener('click', () => {
   getData();
   user_data.push(getData);
 });
