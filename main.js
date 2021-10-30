@@ -1,8 +1,6 @@
 user_info = document.getElementById('user_name');
 user_btn = document.getElementById('user');
 
-const user_data = [];
-
 // Steps:
 // 1. Create a localStorage database
 // 2. Create a function to accept user inputs
@@ -11,8 +9,8 @@ const user_data = [];
 
 // Create a localstorage Database
 
-const db = localStorage.setItem('user_data', JSON.stringify(users));
 const users = [];
+const db = localStorage.setItem('user_data', JSON.stringify(users));
 
 users.push('Erasmus');
 
